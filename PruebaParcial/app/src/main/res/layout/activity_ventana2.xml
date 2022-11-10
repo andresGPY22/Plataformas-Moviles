@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventana2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="22dp"
+        android:text="IMC Canino"
+        android:textAlignment="center"
+        android:textColor="#070000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_peso"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Peso Corporal Kg"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/id_hombro"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Altura del hombro cm"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_peso" />
+
+    <EditText
+        android:id="@+id/id_cola"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Occipucio a la base de la cola cm"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_hombro" />
+
+    <EditText
+        android:id="@+id/id_nombre"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_cola" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="43dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_nombre" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="43dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="133dp"
+        android:text="Calcular IMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
